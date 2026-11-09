@@ -755,10 +755,17 @@
       }
       .credit {
         display: block;
-        margin-top: 2px;
+        margin-top: 8px;
         font-family: var(--mono);
-        font-size: 12.5px;
+        font-size: clamp(18px, 1.6vw, 22px);
+        font-weight: 500;
+        letter-spacing: -0.03em;
         color: var(--ac);
+      }
+      .wink {
+        color: #fff;
+        font-weight: 700;
+        white-space: nowrap;
       }
       .mega {
         font-family: var(--mono);
@@ -1651,7 +1658,7 @@
           <div class="wrap foot">
             <p>
               Arafat Anam Chowdhury · 2026
-              <span class="credit">Co-authored with Claude.</span>
+              <span class="credit">Co-authored with Claude <span class="wink">;)</span></span>
             </p>
             <ul>
               <li>
