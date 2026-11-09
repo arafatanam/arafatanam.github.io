@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://arafatanam.github.io/sitemap.xml
