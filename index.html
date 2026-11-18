@@ -966,11 +966,15 @@
         transform: translate(3px, -3px);
       }
       .go::after,
-      .prod .lnk::after {
+      .prod .lnk.p::after {
         content: "";
         position: absolute;
         inset: 0;
         border-radius: inherit;
+      }
+      .prod .lnk:not(.p) {
+        position: relative;
+        z-index: 1;
       }
       .row:has(.go:focus-visible),
       .prod:has(.lnk:focus-visible) {
@@ -1311,19 +1315,33 @@
           <div class="products">
             <article class="prod">
               <div class="prod-top">
-                <span>Open source, Windows & Linux</span><span>2026</span>
+                <span>On the Microsoft Store, Windows & Linux</span
+                ><span>2026</span>
               </div>
               <h4>StackPad</h4>
               <p class="tagline">A notepad with its tabs on the side.</p>
               <p class="d">
-                Lightweight plain-text editor with a slim vertical tab rail,
-                one-click 4:5 and 16:9 window presets, session restore and calm
-                light and dark themes.
+                Free, open-source plain-text editor with a slim vertical tab
+                rail, tab groups, find and replace, one-click 4:5 and 16:9
+                window presets and crash-safe session restore. Published on the
+                Microsoft Store, and it updates itself on Linux.
               </p>
-              <p class="stack">Electron · electron-builder</p>
+              <p class="stack">Electron · electron-builder · GitHub Actions</p>
               <div class="btns">
                 <a
                   class="lnk p"
+                  href="https://apps.microsoft.com/detail/9NBDRFL8LM3D"
+                  target="_blank"
+                  rel="noopener"
+                  >Microsoft Store <span aria-hidden="true">&#8599;</span></a
+                ><a
+                  class="lnk"
+                  href="https://getstackpad.vercel.app/"
+                  target="_blank"
+                  rel="noopener"
+                  >Website <span aria-hidden="true">&#8599;</span></a
+                ><a
+                  class="lnk"
                   href="https://github.com/arafatanam/StackPad"
                   target="_blank"
                   rel="noopener"
