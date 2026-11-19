@@ -16,7 +16,7 @@ One static page. No build step. GitHub Pages serves this repository from the `ma
 | `og-image.png`              | Preview image for links shared on LinkedIn, WhatsApp and others |
 | `robots.txt`, `sitemap.xml` | Search engine discovery                                         |
 | `.nojekyll`                 | Tells GitHub Pages to serve files as they are                   |
-| `portfolio-icons`           | All portfolio icons                                             |
+| `portfolio-icons`           | `icon` (profile pictures) and `logo` (light backgrounds), SVG and PNG |
 
 ## Add a project
 
